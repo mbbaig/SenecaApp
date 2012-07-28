@@ -10,7 +10,7 @@
         android:layout_above="@+id/gridview"
         android:layout_alignParentLeft="true"
         android:text="@string/rssreader" />
-    
+
     <Button
         android:id="@+id/gridview"
         android:layout_width="match_parent"
@@ -18,5 +18,14 @@
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:text="@string/gridview" />
+
+    <Button
+        android:id="@+id/businfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridview"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/businfo" />
 
 </RelativeLayout>

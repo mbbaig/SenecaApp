@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import com.senecaap.ttcinfo.TTCActivity;
 import com.senecaapp.gridview.GridViewActivity;
 import com.senecaapp.rssreader.RssReaderActivity;
 
@@ -19,6 +20,7 @@ public class SenecaAppActivity extends Activity {
         
         Button rssreader = (Button) findViewById(R.id.rssreader);
         Button gridview = (Button) findViewById(R.id.gridview);
+        Button businfo = (Button) findViewById(R.id.businfo);
         
         rssreader.setOnClickListener(new OnClickListener () {
 
@@ -43,5 +45,16 @@ public class SenecaAppActivity extends Activity {
 			}
         	
         });
+        
+        businfo.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent bus = new Intent();
+				bus.setClass(SenecaAppActivity.this, TTCActivity.class);
+				startActivity(bus);
+			}
+		});
     }
 }

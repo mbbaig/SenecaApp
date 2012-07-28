@@ -7,5 +7,6 @@
     <string name="no_rss_articles">Loading rss articles …</string>
     <string name="rssreader">RSS Reader</string>
     <string name="gridview">Grid View</string>
+    <string name="businfo">TTC Information</string>
 
 </resources>
